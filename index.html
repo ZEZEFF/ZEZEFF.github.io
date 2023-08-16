@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2bbb50d0f6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logo letra.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header"> Home </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#academic"> Education/Certifications </a></li>
+            <li><a href="#Portfolio"> Portfolio </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Programmer | Photographer | Designer</p>
+          <h1>Hi, I'm Martin Herrera From Mexico</h1>
+        </div>
+      </div>
+    </div>
+    <!-- about me  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-me-1">
+            <img src="img/IMG_9826.jpg" />
+          </div>
+          <div class="about-me-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! My name is Martin Herrera Mijares , and I'm thrilled to
+              have the opportunity to share a bit about myself with you. At the
+              age of 25, residing in the beautiful city of Torreon, Coahuila, I
+              am a dedicated programming student, photographer, and designer,
+              constantly seeking inspiration and growth in the creative and
+              technological realms. From a young age, I developed a profound
+              fascination for computers and their immense potential to shape the
+              world. This led me to pursue programming as my primary field of
+              study. I am currently honing my skills as a programming student,
+              always eager to explore the latest advancements in software
+              development, web design, and application creation. Beyond the
+              world of code, I have a deep appreciation for the art of
+              photography. Capturing fleeting moments and preserving memories
+              through the lens of my camera is a passion that fills me with joy.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('softskills')">
+                Soft Skills
+              </p>
+              <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programing Lenguaje</span><br />
+                  Javascrip / Java / C# / Phyton
+                </li>
+                <li>
+                  <span>UI/UX</span><br />
+                  Designing Web/APP interfaces
+                </li>
+                <li>
+                  <span>Adobe Tools</span><br />
+                  Photoshop / Ilustrator / Adobe Premier / Lightroom
+                </li>
+                <li>
+                  <span>App development</span><br />
+                  Building android apps
+                </li>
+                <li>
+                  <span>CCNA: Switching, Routing, and Wireless Essentials</span
+                  ><br />
+                  Roting / Ip services / Switching Protocols / Access
+                  Connectivity
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="softskills">
+              <ul>
+                <li><span></span> <br />Clear communication</li>
+                <li>
+                  <span></span><br />
+                  Positive attitude
+                </li>
+                <li>
+                  <span></span><br />
+                  Conflict Resolution
+                </li>
+                <li>
+                  <span></span><br />
+                  Empathy
+                </li>
+                <li>
+                  <span></span><br />
+                  Team work
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="hobbies">
+              <ul>
+                <li>
+                  <span></span><br />
+                  Exercising and healthcare.
+                </li>
+                <li>
+                  <span></span><br />
+                  Playing videogames
+                </li>
+                <li>
+                  <span></span><br />
+                  Artistic activities such as painting or graphic design.
+                </li>
+                <li>Travel</li>
+                <li>
+                  <span></span><br />
+                  Outdoor activities
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- academic Formation  -->
+    <div id="academic">
+      <div class="container">
+        <h1 class="sub-title">Education/Certifications</h1>
+        <div class="academic-list">
+          <div>
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2>Licenciatura en sistemas (In progress)</h2>
+            <p></p>
+            <a href="#"></a>
+            <!-- En un futuro poner el titulo   -->
+          </div>
+          <div>
+            <i class="fa-solid fa-award"></i>
+            <h2>CCNA: Switching, Routing, and Wireless Essentials</h2>
+            <p></p>
+            <a
+              href="https://www.credly.com/badges/d21d91ca-9025-4b0a-8ff1-6b5428c7cbe0/linked_in?t=rwkuqy"
+              >Learn More</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-award"></i>
+            <h2>Certification in Front-End from alura</h2>
+            <p></p>
+            <a
+              href="https://app.aluracursos.com/degree/certificate/3e69dccb-3573-44f4-ab24-068bc5feae36"
+              >In progress</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/work1.png" alt="" />
+            <div class="layer">
+              <h3>Encriptador</h3>
+              <p>An encryptor which decrypts and encrypts a message.</p>
+              <a href="https://zezeff.github.io/EncriptadorZEEF/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work 2.png" alt="" />
+            <div class="layer">
+              <h3>Academy of the future</h3>
+              <p>
+                This application tries to help people to select a university by
+                gathering information about the universities. It also seeks to
+                provide information about the curriculum, scholarships and
+                support from the universities.
+              </p>
+              <a
+                href="https://www.figma.com/file/F8X0xXYsBUNNEmXwx41wu5/Academy-of-the-future?type=design&mode=design&t=apJ0NGbcFndCAhFZ-0"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work3.png" alt="" />
+            <div class="layer">
+              <h3>Point Lab</h3>
+              <p>
+                This application seeks to bring together the different
+                laboratories for clinical examinations. It brings together each
+                laboratory and seeks to help you find the best price and the
+                best option.
+              </p>
+              <a
+                href="https://www.figma.com/file/7t51dyMseEFufemDR7foFa/PointLab?type=design&node-id=0-1&mode=design&t=apJ0NGbcFndCAhFZ-0"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- conctact  -->
+    <div id="contact">
+      <div class="container"></div>
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Conctact Me</h1>
+          <p><i class="fa-regular fa-paper-plane"></i>walama30@gmail.com</p>
+          <!-- <p><i class="fa-brands fa-whatsapp"></i></p> -->
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ernesto.blasphemous/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/walama30/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.tiktok.com/@zezef3012?lang=es"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/martin-herrera-mijares-69a990270/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <a href="img/martin CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submite" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzb9ZiNQUzTgeooH2PAXyHSp4G2kiNmGOFhKlp75TcSaC27z_9JNG29lIk36NE7LA6xQw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
